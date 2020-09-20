@@ -1,1 +1,16 @@
-run = "javac *.java; java Template"
+run = "javac *.java; java Kummere2_11DieSimulator"
+{
+/**
+Owen Kummer
+E2_11
+The purpose of this program is to create a random number generator that will simulate a die being rolled and providing a number between 1 and 6
+*/
+	public static void main(String[] args)
+	{
+		int min = 1;
+		int max = 6;
+		int random_int = (int)(Math.random() * (max - min + 1) + min);
+		System.out.println("You have just rolled a die.");
+		System.out.println("The number that you have rolled is: " + (random_int));
+	}
+}
